@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="diemly">
+<input type="number" id="diemhoa">
+<input type="number" id="diemsinh">
+<button onclick="Nhapvao()">Nút ấn</button>
+<script>
+    function Nhapvao(){
+        let x = document.getElementById('diemly').value
+        let y = document.getElementById('diemhoa').value
+        let z = document.getElementById('diemsinh').value
+        let a=parseInt(x)
+        let b=parseInt(y)
+        let c=parseInt(z)
+        let d =(a+b+c)/3
+        document.getElementById('inra').innerHTML=  "Điểm trung bình =" +d
+    }
+</script>
+<p id="inra"></p>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="nhietdo">
+<select id="chontruong1">
+    <option value="doc">Độ C</option>
+    <option value="dof">Độ F</option>
+</select>
+<select id="chontruong2">
+    <option value="doc">Độ C</option>
+    <option value="dof">Độ F</option>
+</select>
+<button onclick="Nutan()">Nút ấn</button>
+<script>
+    function Nutan() {
+        let x=document.getElementById("nhietdo").value
+        let y=document.getElementById("chontruong1").value
+        let z=document.getElementById("chontruong2").value
+        if(y == z) {
+            document.getElementById("inra").innerHTML = x
+        }// f => c
+        if(y == 'doc' && z == 'dof'){
+            document.getElementById("inra").innerHTML = (5/9)*(x-32)
+        }
+        if(y == 'dof' && z == 'doc'){
+            document.getElementById("inra").innerHTML = (1.8*x)+32
+        }
+        }
+    // [Hướng dẫn: C/5 = (F-32)/9]
+</script>
+<p id="inra"></p>
+</body>
+</html>

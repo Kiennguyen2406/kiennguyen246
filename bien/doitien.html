@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit</title>
+    <!--C = (5/9) * (F - 32)-->
+    <input type="number" id="dauvao"  >
+    <select name="" id="select1">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+    </select>
+    <select name="" id="select2">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+    </select>
+    <button onclick="ham2()" >
+        convert
+    </button>
+    <script>
+        function ham2(){
+            let giatrivao=document.getElementById("dauvao").value ;
+            let l1=document.getElementById("select1").value;
+            let l2=document.getElementById("select2").value;
+            if (l1 == l2){
+                alert(giatrivao);
+            }
+            if (l1 == "a" && l2 == "b" ){
+                alert(giatrivao/24000)
+            }
+            if(l1 == "b" && l2 =="a"){
+                alert(giatrivao*24000)
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

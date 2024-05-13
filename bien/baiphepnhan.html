@@ -1,0 +1,11 @@
+<input type="text" id="inp1">
+<input type="text" id="inp2">
+<button onclick="
+    let x = parseFloat(document.getElementById('inp1').value);
+    let y = parseFloat(document.getElementById('inp2').value);
+    let result = x * y;
+    document.getElementById('rs').innerHTML = x + ' * ' + y + ' = ' + result;
+    x = '';
+    document.getElementById('inp2').value = '';
+">A</button>
+<h1 id="rs"></h1>

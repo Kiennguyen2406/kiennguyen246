@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="bankinh">
+<button onclick="Nhapvao()">Nút ấn</button>
+<script>
+    function Nhapvao(){
+        let r = document.getElementById('bankinh').value
+        let s = r*2*3.14
+        document.getElementById('inra').innerHTML=  "bankinh =" + s
+    }
+</script>
+<p id="inra"></p>
+</body>
+</html>

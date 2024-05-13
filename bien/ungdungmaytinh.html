@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Caculator</h1>
+<input type="number" id="dien1">
+<input type="number" id="dien2">
+<br>
+<Button onclick="phepcong()">Addition(+)</Button>
+<Button onclick="pheptru()">Subtraction(-)</Button>
+<Button onclick="phepnhan()">Multiplication(X)</Button>
+<Button onclick="phepchia()">Division(/)</Button>
+<script>
+    function phepcong(){
+        x=document.getElementById("dien1").value
+        y=document.getElementById("dien2").value
+        a=parseInt(x)
+        b=parseInt(y)
+        z=a+b
+        alert(z)
+    }
+    function pheptru(){
+        x=document.getElementById("dien1").value
+        y=document.getElementById("dien2").value
+
+        z=x-y
+        alert(z)
+    }
+    function phepnhan(){
+        x=document.getElementById("dien1").value
+        y=document.getElementById("dien2").value
+        z=x*y
+        alert(z)
+    }
+    function phepchia(){
+        x=document.getElementById("dien1").value
+        y=document.getElementById("dien2").value
+        z=x/y
+        alert(z)
+    }
+</script>
+</body>
+</html>
