@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit</title>
+    <input type="number" id="dauvao"  >
+    <select name="" id="select1">
+        <option value="1">VND</option>
+        <option value="26000">USD</option>
+        <option value="1600">Yên</option>
+
+    </select>
+    <select name="" id="select2">
+        <option value="1">VND</option>
+        <option value="26000">USD</option>
+        <option value="1600">Yên</option>
+    </select>
+    <button onclick="ham2()" >
+        convert
+    </button>
+    <h1 id="inra"></h1>
+    <script>
+        function ham2() {
+            let x=+document.getElementById("dauvao").value ;
+            let l1=+document.getElementById("select1").value;
+            let l2=+document.getElementById("select2").value;
+            document.getElementById('inra').innerHTML=x*(l1/l2)
+        }
+
+    </script>
+</head>
+<body>
+</body>
+</html>

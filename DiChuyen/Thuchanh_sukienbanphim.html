@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="anh1.png" alt="" style="width: 200px;height: 200px;top: 100px;left: 100px;position: absolute" id="x">
+<script>
+//setInterval(function, delay, arg1, arg2, ...);
+setInterval (anh2,1);
+function anh2() {
+  let anh=document.getElementById('x');
+  anh.style.left = parseInt(anh.style.left) + 1 +"px";
+}
+
+
+</script>
+</body>
+</html>

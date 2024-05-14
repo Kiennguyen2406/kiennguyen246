@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body onload="docReady()">
+<img src="anh1.png" style="width: 200px;height: 200px;top: 100px;left: 100px;position: absolute" id="x">
+<script>
+    function phai() {
+        let anh = document.getElementById("x")
+        anh.style.left = parseInt(anh.style.left)+5+"px"
+    }
+    function trai() {
+        let anh = document.getElementById("x")
+        anh.style.left = parseInt(anh.style.left)-5+"px"
+    }
+    function duoi() {
+        let anh = document.getElementById("x")
+        anh.style.top = parseInt(anh.style.top) + 5 + "px"
+    }
+    function tren() {
+        let anh = document.getElementById("x")
+        anh.style.top = parseInt(anh.style.top) - 5 + "px"
+    }
+    function caulenhdichuyen(dichuyen) {
+        if (dichuyen === 37) {
+            trai();
+        } else if (dichuyen === 39) {
+            phai();
+        } else if (dichuyen === 38) {
+            tren();
+        } else if (dichuyen === 40) {
+            duoi();
+        }
+    }
+        function docReady() {
+            window.addEventListener('keydown', caulenhdichuyen);
+    }
+</script>
+</body>
+</html>

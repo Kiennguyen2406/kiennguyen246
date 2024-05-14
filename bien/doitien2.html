@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Write a JavaScript program to convert temperatures to and from celsius, fahrenheit</title>
+    <input type="number" id="dauvao"  >
+    <select name="" id="select1">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+        <option value="c">Yên</option>
+
+    </select>
+    <select name="" id="select2">
+        <option value="a">VND</option>
+        <option value="b">USD</option>
+        <option value="c">Yên</option>
+    </select>
+    <button onclick="ham2()" >
+        convert
+    </button>
+    <h1 id="inra"></h1>
+    <script>
+        function ham2() {
+            let x = document.getElementById("dauvao").value;
+            let l1 = document.getElementById("select1").value;
+            let l2 = document.getElementById("select2").value;
+
+            if (l1 == l2) {
+                document.getElementById('inra').innerHTML =x
+            } else if (l1 == "a" && l2 == "b") {
+                document.getElementById('inra').innerHTML = x / 26000
+            } else if (l1 == "a" && l2 == "c") {
+                document.getElementById('inra').innerHTML = x / 1600
+            } else if (l1 == "b" && l2 == "a") {
+                document.getElementById('inra').innerHTML = x * 26000
+            } else if (l1 == "b" && l2 == "c") {
+                document.getElementById('inra').innerHTML = x * 26000 / 1600
+            } else if (l1 == "c" && l2 == "b") {
+                document.getElementById('inra').innerHTML = x * 1600/26000
+            } else if (l1 == "c" && l2 == "a") {
+                document.getElementById('inra').innerHTML = x * 1600
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

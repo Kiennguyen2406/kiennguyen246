@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Football_%28soccer_ball%29.svg" id="daylaanh" style="width: 100px;height: 100px;left: 200px;top: 200px;position: absolute">
+<button onclick="sangphai()">Sang phải</button>
+<script>
+    function sangphai() {
+        let anh = document.getElementById("daylaanh")
+        anh.style.left = parseInt(anh.style.left) + 20 + "px"
+    }
+</script>
+</body>
+</html>
