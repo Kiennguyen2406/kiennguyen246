@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tinh TB cac so chia 5 du 2 tu a -> b
+    let a= +prompt("Nhập a")
+    let b= +prompt("Nhập b")
+    dem=0
+    let s=0 //tổng bằng 0
+    for (let i=a;i<=b;i++) {
+        if (i % 5===0){
+            dem++
+            s=s+i
+            //chạy từ 1 đến 10
+            // dem =2
+            // s=0+5=5
+            // s=5+10=15
+        }
+    }
+    document.write("điểm TB"+ s/dem)
+// a=1,b=10
+    //i=1,2,3,4,5,6,7,8,9,10=>i=5,10
+    //dem=2
+    //s=(0+5+10)/2=>lấy dc 2 số i
+</script>
+</script>
+</body>
+</html>

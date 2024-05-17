@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--//let a
+    //if(a,b,c>0){
+    //if(a+b>c||a+c>b||b+c>a){
+    //}else//th con
+    //else// cả điều kieenjTh con với thằng trên
+    //là tam giác-->
+
+<script>
+    let a=+prompt("Cạnh a")
+    let b=+prompt("Cạnh b")
+    let c=+prompt("Cạnh c")
+    if (a > 0 && b >0 && c>0) {
+        if (a + b > c || b + c > a || a + c > b) {
+            alert("Là tam giác")
+        } else {
+            alert("Không phải là tam giác")
+        }
+    }else {
+        alert("Không phải là tam giác");
+    }
+</script>
+</body>
+</html>

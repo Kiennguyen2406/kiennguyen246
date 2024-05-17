@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+số điện:dùng 100 số điện:hết 1000đ
+dùng từ 101-đến 500:hết 2000
+dùng từ 501 trở đi:hết 3500đ
+-->
+<script>
+    let x= +prompt("Số điện")
+    if (x <= 100){
+        alert("tiền điện là :" +x*1000)
+    }if (x > 100 && x <=500){
+        alert("tiền điện là :"+((x-100)*1000+x*2000))
+    }if (x > 100 && x <=500) {
+        alert("tiền điện là :" + ((x - 100) * 1000 + (x - 400)*2000+x*3500))
+    }
+
+</script>
+</body>
+</html>

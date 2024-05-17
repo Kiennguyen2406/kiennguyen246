@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // chi chia het cho 1 va chinh no
+    let a = +prompt('Nhap vao so: ');
+    let kq = 'La so nguyen to';
+    for (let i = 2; i < a; i++) {
+        if (a%i === 0) {//nếu a chia heets cho 1 số nao đó thì ko phải số nguyên tố
+            kq = 'Khong phai so nguyen to';
+            ;
+        }
+    }
+    document.write(kq)
+
+</script>
+<!-- ctrl +?-->
+</body>
+</html>

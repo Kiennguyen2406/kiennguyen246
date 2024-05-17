@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<button onclick="nhapham()">Nút</button>
+<script>
+    //ax+b=0
+    function nhapham() {
+        a = +document.getElementById("nhapa").value
+        b = +document.getElementById("nhapb").value
+        if (a === 0 && b === 0) {
+            document.getElementById("inra").innerHTML = " PT Vô số ngiệm"
+        }
+        if (a !== 0 && b === 0) {
+            document.getElementById("inra").innerHTML = " PT Vô nghiệm"
+        }
+        if (a === 0 && b !== 0) {
+            document.getElementById("inra").innerHTML = " PT có nghiệm bằng 0"
+        }
+        if (a !== 0 && b !== 0) {
+            document.getElementById("inra").innerHTML = " PT có nghiệm là" + (-b / a)
+        }
+    }
+</script>
+</body>
+</html>

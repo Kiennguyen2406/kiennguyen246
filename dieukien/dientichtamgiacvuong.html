@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<button onclick="nhapham()">Nút</button>
+<script>
+    function nhapham(){
+        a= +document.getElementById("nhapa").value
+        b= +document.getElementById("nhapb").value
+        document.getElementById("inra").innerHTML= "Diện tích tam giác vuông=" + 1/2*a*b
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //in ra các số từ a đến b.a,b nhập vào promt
+    let a = +prompt(" giá a")
+    let b = +prompt("giá b")
+    let s = 1;
+    for (let i = a; i <= b; i++) {
+        s = s * i
+    }
+    document.write(s + "hello<br>")
+    //dem cac so chia 5 du 2 tu a>b
+    let a = +prompt(" giá a")
+    let b = +prompt("giá b")
+    let dem = 0;
+    for (let i = a; i <= b; i++) {
+        dem++
+    }
+    document.write(s + "hello<br>")
+    //Tìm TB các s chia 5 du 2 tu a den b
+    let a = +prompt(" giá a")
+    let b = +prompt("giá b")
+    let dem =0
+    let s=0
+    for(let i=a;i<=b;i++){
+        if(i%5===2){
+            dem++
+            s+=1;
+        }
+    }
+    document.write("số dư 5"+s/dem)
+    document.write(
+
+    // let b =1
+    // while(b++<=3){
+    //     b++;
+    // }
+</script>
+</body>
+</html>

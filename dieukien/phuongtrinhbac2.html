@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="inra"></p>
+<input type="text" id="nhapa">
+<input type="text" id="nhapb">
+<input type="text" id="nhapc">
+<button onclick="nhapham()">Nút</button>
+<script>
+    //ax+b=0
+    function nhapham() {
+        let a = +document.getElementById("nhapa").value
+        let b = +document.getElementById("nhapb").value
+        let c = +document.getElementById("nhapc").value
+        let deta = b*b-4*a*c
+        if (a === 0 && b === 0 && c === 0) {
+            document.getElementById("inra").innerHTML = " PT Vô số ngiệm"
+        }
+        if (a === 0 || b === 0 && c !== 0) {
+            document.getElementById("inra").innerHTML = " PT Vô ngiệm"
+        }if (a === 0 & b !== 0 && c !== 0){
+            document.getElementById("inra").innerHTML = " PT có nghiệm =" + (-c / b)
+        } if (a === 0 & b !== 0 && c !== 0) {
+                document.getElementById("inra").innerHTML = " PT có nghiệm =" +(-c/b)
+            }if (a !== 0 & b !== 0 && c === 0) {
+            document.getElementById("inra").innerHTML = " PT có nghiệm =" +(-b/a) +"và" +"nghiệm = 0"
+        }if (deta === 0 && a!== 0 && b!==0 && c!==0){
+            document.getElementById("inra").innerHTML = " PT có nghiệm kép =" + (-b/(2*a))
+        }if (deta < 0 && a!== 0 && b!==0 && c!==0){
+            document.getElementById("inra").innerHTML = "PT vô nghiệm"
+        }if (deta > 0 && a!== 0 && b!==0 && c!==0){
+            document.getElementById("inra").innerHTML = "PT có 2 nghiệm là" + "    x1="+((-b+Math.sqrt(deta))/(2*a))+"  , x2="+((-b-Math.sqrt(deta))/(2*a))
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Nhập a và b.in ra số chinh phương t a dêến b:Số căn ra nó có giá trị dương như;4,9
+    //căn:math.sqrt
+    //trị tuyệt đối:math.abs
+    a= +prompt("Nhập a")
+    a=Math.ceil(Math.sqrt(a))//làm tròn a lên
+    b= +prompt("Nhập b")
+    b=Math.floor(Math.sqrt(b))//làm tròn b xuống
+    for (let i=a;i<=b;i++){
+        if (Math.sqrt(i)%1===0){//là 1 soo nguyen
+            document.write(i)
+        }}
+    //rút ngắn thay vì chạy từ a đến b thì chạy từ căn a đến căn b
+</script>
+</body>
+</html>

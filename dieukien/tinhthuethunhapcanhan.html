@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Thuế thu nhập cá nhân:
+Thu nhâp:x
+Nếu thu nhập từ 0 đến 5000000:miễn thuế
+Nếu thu nhaapj trên 10 tr :đóng thuế 5%
+-->
+
+<script>
+    let x =prompt("thu nhập cá nhân")
+    if (x >=0 && x<=5000000) {
+        alert("Miễn thuế")
+    }if (x >5000000 && x<=10000000) {
+        alert("Đóng thuế ="+(x*0.05))
+    }if (x>10000000) {
+        alert("Đóng thuế ="+(x*0.1))}
+</script>
+</body>
+</html>
