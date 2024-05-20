@@ -10,12 +10,13 @@
     let n2=1
     let n=''
     let s=0
-    for (let i=2;i<=20;i++){
+    dem=0
+    for (let i=2;dem<=20;i++){
         n=n1+n2;//n=1,n=2
         n1=n2;//n1=1,n1=1,n1=2
         n2=n;//n2=1,n2=2
-        s=s+n
-
+        s=s+n1
+        dem++
     }
     document.write(s)
 
