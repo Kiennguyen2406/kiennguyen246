@@ -10,8 +10,18 @@
 12->Mười hai
 -->
 <script>
-    let donvi = ['mười','Một','hai','ba','Bốn']
-    let so =+prompt
+    let donvi = ["...", "một", "hai", "ba", "bốn", "năm", "sáu", "bảy", "tám", "chín","mười"];
+    let x = +prompt("nhập x");
+    if (x === 0) {
+        document.write(`Khong`);
+    } else if (x < 10) {
+        document.write(donvi[x]);
+    }else if (x < 20) {
+        document.write("mười"+donvi[x]);
+    }else if (x){
+
+    }
+
 </script>
 </body>
 </html>
