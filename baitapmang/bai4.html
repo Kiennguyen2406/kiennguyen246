@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình khởi tạo/nhập vào một mảng số nguyên và đảo ngược các phần tử trong mảng đó.
+   let a=[1,2,3,4,5,6,7,8]
+    let sodau = 0
+    let socuoi = 7
+    for (let sodau=0;sodau < socuoi;sodau++){
+        let b=a[sodau]
+        a[sodau]=a[socuoi]
+        a[socuoi]=b
+        socuoi --
+    }document.write(a)
+</script>
+</body>
+</html>

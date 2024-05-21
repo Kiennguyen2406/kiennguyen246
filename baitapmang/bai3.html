@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+    let a=[1,2,3,4,5,6,7,8,9,22]
+    let max=a[0]
+    let s=0
+    let dem =0
+    for (let i=0;i<a.length;i++){
+        if (a[i]>max){
+            max=a[i]
+        }
+    }
+    for (let i=0;i<a.length;i++){
+        s=s+a[i]
+        dem++
+    }
+    document.write(max+'<br>')
+
+    document.write(s/dem)
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Nhap vao x, tim vi tri cua x trong mang. Neu co thi in vi tri, neu khong co thi in -1
+    x = +prompt("nhaap x")
+    let a = [3, 2, 4, 5, 12, 32, 1, 5, 6, 32, 32, 32]
+    let b= false
+
+    for (let i = 0; i < a.length; i++) {
+        if (a[i] === x) {
+            document.write(i + '<br>')
+            b=true
+        }
+    }
+
+    if (b===false) {
+        document.write("-1")
+
+    }
+    // let a=[3,2,6]
+    // a.push (100) // tăng thêm v trí ở cuối
+    // a.push (200) //Tăng thêm nưa [3,2,6,100,200]
+    // a.spice(2,2)//[3,2,200]//bỏ từ phaan tử thứ 2 và bỏ 2 phần tử hất về sau
+</script>
+</body>
+</html>

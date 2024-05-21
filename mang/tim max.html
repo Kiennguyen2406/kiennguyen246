@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // let max=a[0];
+    // for (let i=0;i<a.length;i++){
+    //     if (max<a[i]){
+    //         max =a[i]
+    //     }
+    // }
+    // document.write(max)
+    //tìm min
+    // let a=[3,2,4,5,12,32,1,5,6]
+    // let min =a[0];
+    // for (let i=0;i<a.length;i++){
+    //     if (min>a[i]){
+    //         min=a[i]
+    //     }
+    // }
+    // document.write(min)
+
+    //timf min chanx
+    let a = [3, 2, 4, 5, 12, 32, 1, 5, 6]
+    let min = a[0];
+    for (let i = 0; i < a.length; i++) {
+        if (min > a[i] && a[i] % 2 === 0) {
+            min = a[i]
+        }
+    }
+    document.write(min)
+</script>
+</body>
+</html>
