@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let list = [
+        {
+        name: 'IP',
+        price : 120,
+        quantity:50
+    },
+    {
+        name: 'SS',
+        price :89,
+        quantity:100
+    },
+    {
+        name: 'Xiaomi',
+            price :50,
+        quantity:120
+    }
+    ]
+    //tổng giá trị kho
+    // let sum=0
+    // for (let i=0;i<list.length;i++){
+    //     sum = sum+ list[i].price * list[i].quantity
+    // }document.write(sum)
+
+    // in ra các sp giá >100
+    // for (let i=0;i<list.length;i++){
+    //     if (list[i].price > 100) {
+    //         document.write(`${list[i].name}`)
+    //     }
+    // }
+    //Nhập vào tên ,hiện ra tên các sp có tên đã nhập
+    ten = +prompt('nhập tên')
+    for (let i=0;i<list.length;i++) {
+        if (ten === list[i].name) {
+            alert(list[i].name)
+        }
+    }
+</script>
+</body>
+</html>

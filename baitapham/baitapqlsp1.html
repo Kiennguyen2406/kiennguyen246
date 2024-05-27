@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Thanh menu-->
+<input type="text" id="nhap">
+<button onclick="nutthem()">Thêm</button>
+<button type="reset">reset</button>
+<div id="disp">
+</div>
+<script>
+    let danhsach =['iphone','macbook']
+    showList()
+    function showList(){
+        let str = '<h1>Quản lý sản phẩm</h1>'
+        str = str+ `Số lượng các sản phẩm: ${danhsach.length}`//số lượng sản phẩm
+        for (let i=0;i<danhsach.length;i++){
+                str+=`<h2>${danhsach[i]} <button onclick="nutsua(${i})">Sửa</button> <button onclick="nutxoa(${i})">Xóa</button> </h2> `
+            }
+            document.getElementById('disp').innerHTML= str;
+    }
+    function nutthem() {
+    let nhapsp=document.getElementById("nhap").value
+        document.getElementById('disp').innerHTML= danhsach.push(nhapsp)
+        showList()
+    }function nutsua(index) {
+        let nhapsp=document.getElementById("nhap").value
+        document.getElementById('disp').innerHTML=danhsach[index]=nhapsp
+        showList()
+    }
+    function nutxoa(index) {
+        document.getElementById('disp').innerHTML=danhsach.splice(index,1)
+        showList()
+    }
+</script>
+</body>
+</html>

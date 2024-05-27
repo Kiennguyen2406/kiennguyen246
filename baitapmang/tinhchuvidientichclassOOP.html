@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Retangle {
+        constructor(cd,cr){//khái báo khởi tạo 2 thuộc tính
+            this.cd = cd;
+            this.cr = cr;
+        }getP(){//Khai báo hàm/phương thức
+           return 2* (this.cd +this.cr)
+        }
+        getS(){
+            return this.cd * this.cr;
+        }
+    }
+    let r1=new Retangle(10,5);
+    alert(r1.getP())
+
+</script>
+</body>
+</html>

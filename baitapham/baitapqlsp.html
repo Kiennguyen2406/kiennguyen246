@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product
+</h2>
+<br>
+<button onclick="showList()">List</button>
+<button onclick="showformAdd()">Add</button>
+<div id ='disp' ></div>
+<script>
+    let listProduct = ['Ip15','S23','Note 9'];
+    function showList() {
+        let str = '<h1>Danh sách sản phẩm</h1>'
+        str += `<p>Số lượng sản phẩm: ${listProduct.length}</p>`
+        for (let i = 0; i < listProduct.length; i++) {
+            str += `<h3>${listProduct[i]}<button onclick="edit(${i})">edit</button> </h3>`
+        }
+        document.getElementById('disp').innerHTML = str;
+    }
+    function showformAdd() {
+        let str ='<input id ="inp"> <button onclick="add()">Create</button>'
+        document.getElementById('disp').innerHTML = str;
+    }
+    function  add() {
+        listProduct.push(document.getElementById('inp').value);
+        showList();
+    }function edit(index) {
+        let str =`<input id ="inp" value="${listProducts[index]}"> <button onclick="save(${index})">save</button>`
+        document.getElementById('disp').innerHTML = str; }
+</script>
+</body>
+</html>

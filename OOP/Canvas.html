@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the HTML5 canvas tag.</canvas>
+<script>
+    // <canvas id="myCanvas" width="200" height="100">
+    // </canvas>
+    // Có thể xem cavas như là một tờ giấy trắng, chúng ta viết mã Javascript để vẽ lên tờ giấy trắng đó.
+    //     Có các phương thức để vẽ đường kẻ, hình hộp, đường cung, chữ và vẽ hình ảnh.
+
+
+    // let c= document.getElementById("myCanvas");//vẽ đường thẳng
+    // let ctx =c.getContext("2d");
+    // ctx.moveTo(0,0);
+    // ctx.lineTo(200,100); //lineTo():Sử dụng để áp dụng để vẽ 1 đường thẳng
+    // ctx.stroke();
+
+    // let c= document.getElementById("myCanvas");
+    // let ctx =c.getContext("2d");
+    // ctx.beginPath();
+    // ctx.arc(95,50,40,0,2*Math.PI);  //arc();Vẽ hình tròn
+    // ctx.stroke();
+
+    //vẽ chữ :strokeText()hoặc fill
+    // var c = document.getElementById("myCanvas");
+    // var ctx = c.getContext("2d");
+    // ctx.font = "30px Arial";
+    // ctx.fillText("Hello World",10,50);
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // // Create gradient // tạo màu
+    // var grd = ctx.createLinearGradient(0,0,200,0);
+    // grd.addColorStop(0,"red");
+    // grd.addColorStop(1,"blue");
+    //
+    // // Fill with gradient //
+    // ctx.fillStyle = grd;
+    // ctx.fillRect(10,10,150,80);
+
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Create gradient// hiệu ứng tạo màu tròn
+    var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+    grd.addColorStop(0,"red");
+    grd.addColorStop(1,"white");
+    // Fill with gradient
+    ctx.fillStyle = grd;
+    ctx.fillRect(10,10,150,80);
+</script>
+</body>
+</html>

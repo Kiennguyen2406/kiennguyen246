@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+    // Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1.
+    // let n=+prompt('Nhập vào số lượng:');
+    // let arr =[];
+    // for (let i=0;i<n;i++){
+    //     let ele= +prompt("Nhập vào phần tu ")
+    //     arr.push(ele)
+    // }
+    // document.write(arr)
+    function newarray() {
+        let soluong=+prompt('Nhập vào số lượng:')
+        let arr =[]
+        for (let j=0;j<soluong;j++) {
+            let ele= +prompt("Nhập vào phần tu ")
+            arr.push(ele)
+        }return arr
+    }
+    d= +prompt("nhập d")
+    document.write(ham(newarray(),d));
+    function ham(arr,b){
+        let dem=0
+        for (let i=0;i<arr.length;i++) {
+            if (arr[i]===b) {
+             dem++
+            }
+        }if (dem > 0 ){
+            return dem
+        }if (dem <= 0){
+            return "-1"
+        }
+    }
+
+</script>
+</body>
+</html>

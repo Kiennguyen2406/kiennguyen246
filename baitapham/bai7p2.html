@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--let x=10-->
+<!--let y=20-->
+<!--let z=x-->
+<!--z=x=10-->
+<!--x=y=20-->
+<!--y=z=10-->
+<script>
+    function sw(a,b) {
+        return [b,a];
+    }
+    let x=10;
+    let y=20;
+    let arr =sw(x,y);
+    x=arr[0];
+    y=arr[1];
+    alert(x+''+y)
+</script>
+</body>
+</html>
