@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Câu 3: Viết hàm tìm các số nguyên tố với tham số truyền vào là mảng chứa các số nguyên.
+    //     Hiển thị mảng được trả về từ hàm ( Yêu cầu sắp xếp tăng dần).
+    function ham(Number) {
+    if (Number <=1 ) {
+        return false
+    }
+        if (Number ===2) {
+            return true
+        }
+        if (Number === 0){
+            return false
+        }
+        for (let i=3;i<Math.sqrt(Number);i++){
+            if (Number % i ===0) {
+                return false
+            }
+        }
+    }
+    function soNguyenTo(arr) {
+
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm insertNumberToArray() nhận vào một mảng các số
+    // nguyên, một số nguyên x, và một số nguyên vị trí index. Hàm trả
+    // về mảng ban đầu nếu vị trí index có giá trị nhỏ hơn 0 hoặc lớn
+    // hơn chiều dài mảng. Nếu không thì trả về mảng mới đã được
+    // thêm số x vào vị trí index.
+    let arr=[1,2,3,4,5,6]
+    function insertNumberToArray(arr, x, index) {
+        if (index < 0 || index > arr.length) {
+            return arr
+        }
+        arr.splice(index,0,x)//0 là Phaanf tử bị xóa,ko phần tử nào bị xóa
+        return arr
+    }
+</script>
+</body>
+</html>

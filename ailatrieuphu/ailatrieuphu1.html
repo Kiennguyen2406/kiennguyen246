@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Who Wants to Be a Millionaire?</title>
+    <link rel="stylesheet" href="phongcach1.css">
+    <style>
+        .correct {
+            background-color: green;
+            color: white;
+        }
+        .incorrect {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<div style="text-align: center;color: red">
+    <button id='start' onclick="start()">Start game</button>
+    <div id="cacPhanTugame" style="display: none;">
+        <p id="Cauhoi">Câu hỏi</p>
+        <button id='luachon1' onclick="kiemtra(this)" style="width: 150px;"></button>
+        <br>
+        <button id='luachon2' onclick="kiemtra(this)" style="width: 150px;"></button>
+        <br>
+        <button id='luachon3' onclick="kiemtra(this)" style="width: 150px;"></button>
+        <br>
+        <button id='luachon4' onclick="kiemtra(this)" style="width: 150px;"></button>
+        <br>
+        <p style="color: red" id="traloi"></p>
+        <p style="color: red" id="diemso"></p>
+    </div>
+    <script>
+        class TrieuPhu {
+            constructor(cauhoi, luachon1, luachon2, luachon3, luachon4, dapandung) {
+                this.cauhoi = cauhoi;
+                this.luachon1 = { text: luachon1, correct: dapandung === 1 };
+                this.luachon2 = { text: luachon2, correct: dapandung === 2 };
+                this.luachon3 = { text: luachon3, correct: dapandung === 3 };
+                this.luachon4 = { text: luachon4, correct: dapandung === 4 };
+            }
+        }
+
+        let cauHoi1 = new TrieuPhu('Câu 1: 1 + 1 = ?', '2', '3', '4', '5', 1);
+        let cauHoi2 = new TrieuPhu('Câu 2: Ai là người lãnh đạo cuộc khởi nghĩa Lam Sơn?', 'A. Trần Hưng Đạo', 'B. Nguyễn Huệ', 'C. Lê Lợi', 'D. Nguyễn Trãi', 3);
+        let cauHoi3 = new TrieuPhu('Câu 3: Cuộc Cách mạng Tân Hợi diễn ra vào năm nào?', 'A. 1905', 'B. 1911', 'C. 1925', 'D. 1930', 2);
+        let cauHoi4 = new TrieuPhu('Câu 4: Người sáng lập triều đại Hậu Lê của Việt Nam là ai?', 'A. Lê Thái Tổ', 'B. Lê Thánh Tông', 'C. Lê Nhân Tông', 'D. Lê Thái Tông', 1);
+        let cauHoi5 = new TrieuPhu('Câu 5: Ai là Tổng thống đầu tiên của Hoa Kỳ?', 'A. George Washington', 'B. Thomas Jefferson', 'C. Abraham Lincoln', 'D. John Adams', 1);
+        let cauHoi6 = new TrieuPhu('Câu 6: Triều đại nào được xem là thời kỳ hoàng kim của lịch sử phong kiến Việt Nam?', 'A. Nhà Trần', 'B. Nhà Lý', 'C. Nhà Lê sơ', 'D. Nhà Nguyễn', 3);
+
+
+    </script>
+</div>
+</body>
+</html>

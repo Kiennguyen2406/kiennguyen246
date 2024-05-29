@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // caau1 : Nhập từ bàn phím mảng số nguyên gồm n phần tử (n<=20).
+    // Hiển thị ra màn hình danh sách các phần tử của mảng, hiệu của Tổng các số chẵn và Tổng các số lẻ có trong mảng.
+    //     Ví dụ: [1,2,3,4,5,6]. Kết quả sau khi thực hiện là: (2+4+6)-(1+3+5) = 3
+    let SumChan=0
+    let SumLe=0
+    for (let n=0;n<=20;n++) {
+        if (n %2 ===0) {
+            SumChan=SumChan+n
+        }else{
+            SumLe=SumLe+n
+        }
+    }document.write(SumChan-SumLe)
+
+</script>
+</body>
+</html>
