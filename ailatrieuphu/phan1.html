@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Là Triệu Phú</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="phan2.css">
+</head>
+<body>
+<div class="container">
+    <div class="question">
+        <h2 id="question-text"></h2>
+    </div>
+    <div class="answers" id="answers"></div>
+    <div class="lifelines">
+        <button class="lifeline" id="fifty-fifty">50-50</button>
+        <button class="lifeline" id="ask-audience">Hỏi Khán Giả</button>
+    </div>
+    <div class="result" id="result"></div>
+</div>
+
+<script>
+    // Câu hỏi và đáp án
+    const questions = [
+        {
+            question: "What is the capital of France?",
+            answers: ["Paris", "London", "Berlin", "Madrid"],
+            correctAnswer: "Paris"
+        },
+        {
+            question: "What is the largest mammal?",
+            answers: ["Elephant", "Whale", "Giraffe", "Lion"],
+            correctAnswer: "Whale"
+        },
+        // Thêm câu hỏi và đáp án khác ở đây
+    ];
+
+    // Biến đếm câu hỏi
+    let currentQuestion = 0;
+
+    // Function để load câu hỏi và đáp án
+    function loadQuestion() {
+        const questionElement = document.getElementById('question-text');
+        const answersElement = document.getElementById('answers');
+        const question = questions[currentQuestion];
+
+        // Hiển thị câu hỏi
+        questionElement.textContent = question.question;
+
+        // Hiển thị các đáp án
+        answersElement.innerHTML = '';
+        question.answers.forEach((answer, index) => {
+            const button = document.createElement('button');
+            button.textContent = answer;
+            button.addEventListener('click', () => {
+                checkAnswer(answer, question.correctAnswer);
+            });
+            answersElement.appendChild(button);
+        });
+    }
+
+    // Function để kiểm tra đáp án
+    function checkAnswer(selectedAnswer, correctAnswer) {
+        if (selectedAnswer === correctAnswer) {
+            showResult("Correct!", "green");
+            currentQuestion++;
+            if (currentQuestion < questions.length) {
+                loadQuestion();
+            } else {
+                showResult("You've won the game!", "green");
+            }
+        } else {
+            showResult("Wrong answer. Game over!", "red");
+        }
+    }
+
+    // Function để hiển thị kết quả
+    function showResult(message, color) {
+        const resultElement = document.getElementById('result');
+        resultElement.textContent = message;
+        resultElement.style.color = color;
+    }
+
+    // Khởi động trò chơi
+    loadQuestion();
+
+    // Xử lý chia đôi
+    document.getElementById('fifty-fifty').addEventListener('click', () => {
+        const question = questions[currentQuestion];
+        const randomIndexes = getRandomIndexes(question.answers.length, 2);
+        const answersElement = document.getElementById('answers');
+        answersElement.innerHTML = '';
+        question.answers.forEach((answer, index) => {
+            if (randomIndexes.includes(index) || answer === question.correctAnswer) {
+                const button = document.createElement('button');
+                button.textContent = answer;
+                button.addEventListener('click', () => {
+                    checkAnswer(answer, question.correctAnswer);
+                });
+                answersElement.appendChild(button);
+            }
+        });
+    });
+
+    // Xử lý hỏi khán giả
+    document.getElementById('ask-audience').addEventListener('click', () => {
+        const question = questions[currentQuestion];
+        const answersElement = document.getElementById('answers');
+        answersElement.innerHTML = '';
+        question.answers.forEach((answer) => {
+            const percentage = Math.floor(Math.random() * 101);
+            const button = document.createElement('button');
+            button.textContent = `${answer} (${percentage}%)`;
+            button.disabled = true;
+            answersElement.appendChild(button);
+        });
+    });
+
+    // Function để lấy một mảng ngẫu nhiên của các chỉ số từ 0 đến n-1
+    function getRandomIndexes(max, count) {
+        const indexes = [];
+        while (indexes.length < count) {
+            const index = Math.floor(Math.random() * max);
+            if (!indexes.includes(index)) {
+                indexes.push(index);
+            }
+        }
+        return indexes;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<script>
+    // bai4: Viết hàm có tham số truyền vào là một chuỗi các ký tự.
+    // Hàm thực hiện đếm số lượng ký tự in hoa  trong chuỗi.
+    // -	Nếu chuỗi có ký tự in hoa hàm trả về số lượng ký tự in hoa có trong chuỗi.
+    // -	Nếu Chuỗi không chứa các ký tự hoa thì hàm sẽ trả về thông báo "The Strings is not contain upper char"
+    function chuoi(str) {
+        let dem =0
+        for (let i=0;i<str.length;i++) {
+            if (str[i] >= 'A' && str[i] <= 'Z') {
+                dem++
+
+            }
+        }
+        if (dem > 0) {
+            return dem
+        }else {
+            return 'The Strings is not contain upper char'
+        }
+    }
+    let a='fjwaefoiADCKDOW'
+    document.write(chuoi(a))
+</script>
+</body>
+</html> 

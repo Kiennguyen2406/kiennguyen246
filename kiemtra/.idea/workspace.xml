@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b51c65f5-cf90-4581-b95a-b70548fdc0b9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../ailatrieuphu/phan1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ailatrieuphu/phan2.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP/meochuot.html" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP/meochuot.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ailatrieuphu/ailatrieuphu2.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ailatrieuphu/ailatrieuphu2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baikiemtra2/bai3.html" beforeDir="false" afterPath="$PROJECT_DIR$/../baikiemtra2/bai3.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2hNGCGGfaZDunZfEkoSLCSKkV2F" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/web storm project/C04/kiemtrathu",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-2e7d6887c066-JavaScript-WS-241.15989.47" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b51c65f5-cf90-4581-b95a-b70548fdc0b9" name="Changes" comment="" />
+      <created>1717426991868</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1717426991868</updated>
+      <workItem from="1717426993162" duration="14000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

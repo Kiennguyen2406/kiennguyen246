@@ -25,7 +25,7 @@
         class TrieuPhu {
             constructor(cauhoi, luachon1, luachon2, luachon3, luachon4, kiemtrakq) {
                 this.cauhoi = cauhoi;
-                this.luachon1 = luachon1;
+                this.luachon1 = luachon1 ;
                 this.luachon2 = luachon2;
                 this.luachon3 = luachon3;
                 this.luachon4 = luachon4;
@@ -69,14 +69,14 @@
                 document.getElementById('luachon4').innerHTML = cauHoiHienTai.luachon4;
 
             } else {
-                document.getElementById('Cauhoi').innerHTML = 'Chúc mừng bạn đã hoàn thành trò chơi!';
+                showAlert('Bạn đã trả lời sai');
                 document.getElementById('diemso').innerHTML = '0';
                 document.getElementById('start').innerHTML = 'Start game';
                 document.getElementById('start').style.display = 'block';
                 document.getElementById('cacPhanTugame').style.display = 'none';
-                reload()
-
+                round = 0;
             }
+
         }
                 function kiemtra(id) {
                     let cauHoiHienTai = cacCauHoi[round - 1];

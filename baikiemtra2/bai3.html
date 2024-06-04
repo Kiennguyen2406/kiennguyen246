@@ -6,28 +6,28 @@
 </head>
 <body>
 <script>
-    // Câu 3: Viết hàm tìm các số nguyên tố với tham số truyền vào là mảng chứa các số nguyên.
-    //     Hiển thị mảng được trả về từ hàm ( Yêu cầu sắp xếp tăng dần).
-    function ham(Number) {
-    if (Number <=1 ) {
-        return false
-    }
-        if (Number ===2) {
-            return true
+    // Hàm kiểm tra số nguyên tố
+    function isPrime(num) {
+        if (num <= 1) return false; // Số nguyên tố phải lớn hơn 1
+        for (let i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i === 0) return false; // Nếu num chia hết cho i thì không phải số nguyên tố
         }
-        if (Number === 0){
-            return false
-        }
-        for (let i=3;i<Math.sqrt(Number);i++){
-            if (Number % i ===0) {
-                return false
-            }
-        }
-    }
-    function soNguyenTo(arr) {
-
+        return true;
     }
 
+    // Hàm tìm các số nguyên tố trong mảng và sắp xếp tăng dần
+    function findAndSortPrimes(array) {
+        // Lọc các số nguyên tố từ mảng đầu vào
+        const primeArray = array.filter(isPrime);
+        // Sắp xếp mảng các số nguyên tố tăng dần
+        primeArray.sort((a, b) => a - b);
+        return primeArray;
+    }
+
+    // Ví dụ sử dụng:
+    const inputArray = [29, 15, 12, 37, 18, 11, 22, 19];
+    const primeArray = findAndSortPrimes(inputArray);
+    console.log(primeArray); // Output: [11, 19, 29, 37]
 </script>
 </body>
 </html>
